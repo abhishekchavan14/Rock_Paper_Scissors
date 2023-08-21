@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color:bisque;
+}
+#heading, #instructions, #btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#instructions{
+    margin-bottom: 0;
+}
+#heading{
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+}
+#btn_container{
+    margin-top: 0;
+    margin-bottom: 3%;
+    display: flex;
+}
+#btn_container .btn{
+    margin: 2%;
+    padding: 1%;
+}
+#btn_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#btn_container button{
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    margin: 2%;
+    cursor: pointer;
+}
+#result_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#choices_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+#choices_container .choices{
+    /* border: solid blue; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    margin: 30px;
+}
+#choices_container .choices #user_choice, #CPU_choice{
+    font-family: monospace;
+}
+#choices_container .choices #You,#CPU{
+    margin-bottom: 5%;
+    /* color: rgb(76, 166, 211); */
+    font-size: medium;
+}
+#result_display{
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+#about_tag{
+    height: 6%;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    box-shadow: 5px 5px 10px black;
+    opacity: 60%;
+    transition: 1s;
+}
+#about_tag:hover{
+    opacity: 100%;
+}
+@media (min-width:320px) and (max-width:480px) {
+    #about_tag{
+        height: 3%;
+        bottom: 30%;
+        right: 35%;
+    }
+}
+@media (min-width:481px) and (max-width:769px) {
+    #about_tag{
+        height: 3%;
+        top: 8%;
+        right: 1%;
+    }
+}
