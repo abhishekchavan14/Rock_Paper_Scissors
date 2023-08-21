@@ -46,7 +46,9 @@ function result_calculator(user, CPU) {
     }
     else if (user === "Rock" && CPU === "Paper") {
         result = "You Loose!";
+        document.getElementById("loose_audio").volume = 0.3;
         document.getElementById("loose_audio").play();
+
     }
     else if (user === "Rock" && CPU === "Scissor") {
         result = "You Won!";
@@ -61,10 +63,12 @@ function result_calculator(user, CPU) {
     }
     else if (user === "Paper" && CPU === "Scissor") {
         result = "You Loose!";
+        document.getElementById("loose_audio").volume = 0.3;
         document.getElementById("loose_audio").play();
     }
     else if (user === "Scissor" && CPU === "Rock") {
         result = "You Loose!";
+        document.getElementById("loose_audio").volume = 0.3;
         document.getElementById("loose_audio").play();
     }
     else if (user === "Scissor" && CPU === "Paper") {
